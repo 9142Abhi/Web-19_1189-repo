@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Students</title>
+    <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+      body{
+          width:100%;
+      }   
+      div{
+          display: flex;
+          margin:auto;
+          margin-top: 30px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      div>a:first-child{
+          margin-left: 150px;
+          
+      }
+      div>a{
+          margin-left: 100px;
+          margin-right: 100px;
+      }
+      h1{
+          font-size: 20px;
+          color: black;
+          margin: 10px;
+          
+          
+  
+      }
+      
+      form{
+          margin-left: 500px;
+      }
+      input{
+          display: block;
+          height: 24px;
+          width: 300px;
+          margin-top: 4px;
+      }
+      select{
+          display: block;
+          height: 24px;
+          width: 300px;
+          margin-top: 20px;
+          margin-left: 450px;
+      }
+      table{
+        margin-left: 180px;
+        margin-top: 20px;
+
+      }
+     thead>tr>th{
+        padding-left: 40px;
+        color: white;
+        padding-right: 30px;
+      background-color: teal;
+      font-size: 20px;
+        
+
+      }
+  
+  </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="./index.html"><h1>Add Students</h1></a>
+      <a href="./students.html"><h1>Students Database</h1></a>
+      <a href="./admitted.html"><h1>Admitted</h1></a>
+      <a href="./rejected.html"><h1>Rejected</h1></a>
+    </div>
+    <select id="filter">
+      <option value="">Filter By Course</option>
+      <option value="all">All</option>
+      <option value="Web-Development">Web-Development</option>
+      <option value="Android-Development">Android-Development</option>
+      <option value="Data-Analitics">Data-Analitics</option>
+    </select>
+    <table cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Course</th>
+          <th>Gender</th>
+          <th>Phone</th>
+          <th>Admitted</th>
+          <th>Rejected</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table Rows should be appended Here  -->
+      </tbody>
+    </table>
+  </body>
+  <script src="./students.js"></script>
+</html>
